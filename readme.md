@@ -2,14 +2,14 @@
 
 Super simple, performant, clientside CommonJS cookie reader and nothing else.
 
-CommmonJS and [clientmodules](https://github.com/henrikjoreteg/clientmodules) compatible.
+CommmonJS and [browserify](http://browserify.org/) compatible.
 
 
 ## Why publish another cookie tool?
 
 Dead simple 4-line function that has the best performance according to: http://jsperf.com/cookie-parsing
 
-Handy to have as a seperate module for easy installation with npm and clientmodules.
+Handy to have as a seperate module for easy installation with npm.
 
 
 ## Usage
