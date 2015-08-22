@@ -2,7 +2,7 @@
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "name": "cookie-getter",
   "description": "Super light, high performance clientside cookie reader. Common JS and clientmodules compatible.",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "tags": [
     "cookie",
     "cookies",
