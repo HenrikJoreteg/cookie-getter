@@ -3,10 +3,31 @@
   "name": "cookie-getter",
   "description": "Super light, high performance clientside cookie reader. Common JS and clientmodules compatible.",
   "version": "0.0.2",
-  "tags": ["cookie", "cookies", "client", "clientmodules"],
+  "tags": [
+    "cookie",
+    "cookies",
+    "client",
+    "clientmodules"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/henrik/cookie-getter.git"
   },
-  "main": "./cookie-getter.js"
+  "main": "./cookie-getter.js",
+  "scripts": {
+    "test": "node test/index.js | tap-spec",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.3",
+    "precommit-hook": "^3.0.0",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.2.0"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }
