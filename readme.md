@@ -1,20 +1,16 @@
 # cookie-getter
 
-Super simple, performant, clientside CommonJS cookie reader and nothing else.
-
-CommmonJS and [browserify](http://browserify.org/) compatible.
-
+Minimalist (<10 LOC), performant, clientside cookie reader module and nothing else. It is tolerant of being required server-side. It will simply returns `null` if called within node.
 
 ## Why publish another cookie tool?
 
-Dead simple 4-line function that has the best performance according to: http://jsperf.com/cookie-parsing
+Dead simple function that has the best performance according to: http://jsperf.com/cookie-parsing
 
-Handy to have as a seperate module for easy installation with npm.
-
+Handy to have as a separate module for easy installation with npm.
 
 ## Usage
 
-installing: 
+installing:
 
 ```
 npm install cookie-getter

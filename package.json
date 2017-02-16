@@ -1,33 +1,36 @@
 {
-  "author": "Henrik Joreteg <henrik@andyet.net>",
   "name": "cookie-getter",
-  "description": "Super light, high performance clientside cookie reader. Common JS and clientmodules compatible.",
+  "description": "Super light, high performance clientside cookie reader module.",
   "version": "1.0.1",
-  "tags": [
-    "cookie",
-    "cookies",
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "bugs": "https://github.com/HenrikJoreteg/cookie-getter/issues",
+  "devDependencies": {
+    "precommit-hook": "^3.0.0",
+    "standard": "8.6.0",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.2.0"
+  },
+  "homepage": "https://github.com/HenrikJoreteg/cookie-getter",
+  "keywords": [
     "client",
-    "clientmodules"
+    "clientmodules",
+    "cookie",
+    "cookies"
+  ],
+  "license": "MIT",
+  "main": "./cookie-getter.js",
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/HenrikJoreteg/cookie-getter.git"
   },
-  "main": "./cookie-getter.js",
   "scripts": {
+    "lint": "standard",
     "test": "node test/index.js | tap-spec",
-    "lint": "jshint .",
     "validate": "npm ls"
-  },
-  "devDependencies": {
-    "jshint": "^2.5.3",
-    "precommit-hook": "^3.0.0",
-    "tap-spec": "^4.0.2",
-    "tape": "^4.2.0"
-  },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ]
+  }
 }
