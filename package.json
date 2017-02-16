@@ -1,7 +1,7 @@
 {
   "name": "cookie-getter",
   "description": "Super light, high performance clientside cookie reader module.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "bugs": "https://github.com/HenrikJoreteg/cookie-getter/issues",
   "devDependencies": {
