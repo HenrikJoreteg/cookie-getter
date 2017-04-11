@@ -7,5 +7,10 @@ module.exports = function (name) {
   var res
   if (!~setPos) return null
   res = decodeURIComponent(cookie.substring(setPos, ~stopPos ? stopPos : undefined).split('=')[1])
-  return (res.charAt(0) === '{') ? JSON.parse(res) : res
+  if (res.charAt(0) === '{') {
+    return JSON.parse(res)
+  } else if (res.indexOf('j:{') === 0) {
+    return JSON.parse(res.substr(2))
+  }
+  return res
 }
